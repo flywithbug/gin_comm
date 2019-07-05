@@ -10,9 +10,11 @@ const (
 	RouterTypeNeedAuth
 )
 
+
+
 type GinHandleFunc struct {
 	Handler    gin.HandlerFunc
-	RouterType StateType
 	Method     string
 	Route      string
+	RouterGroup      *gin.RouterGroup
 }
