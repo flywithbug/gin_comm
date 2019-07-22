@@ -9,9 +9,9 @@ import (
 func RegisterRouters(r *gin.Engine,routers []handler_comm.GinHandleFunc)  {
 	for _,v := range routers {
 		if v.RouterGroup != nil{
-			doRouteGroupRegister(v.Method,strings.ToLower(v.Route),v.Handler,v.RouterGroup)
+			doRouteGroupRegister(v.Method,strings.ToUpper(v.Route),v.Handler,v.RouterGroup)
 		}else {
-			doRouteRegister(v.Method,strings.ToLower(v.Route),v.Handler,r)
+			doRouteRegister(v.Method,strings.ToUpper(v.Route),v.Handler,r)
 		}
 	}
 }
