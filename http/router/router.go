@@ -30,6 +30,8 @@ func doRouteGroupRegister(method, route string, handler gin.HandlerFunc, rGroup 
 		rGroup.DELETE(route, handler)
 	case "OPTIONS":
 		rGroup.OPTIONS(route, handler)
+	case "ANY":
+		rGroup.Any(route, handler)
 	default:
 		rGroup.GET(route, handler)
 	}
@@ -48,6 +50,8 @@ func doRouteRegister(method, route string, handler gin.HandlerFunc, r *gin.Engin
 		r.DELETE(route, handler)
 	case "OPTIONS":
 		r.OPTIONS(route, handler)
+	case "ANY":
+		r.Any(route, handler)
 	default:
 		r.GET(route, handler)
 	}
