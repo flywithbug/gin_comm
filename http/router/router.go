@@ -39,7 +39,7 @@ func doRouteGroupRegister(method, route string, handler gin.HandlerFunc, rGroup 
 
 //普通routerType==routerTypeNormal
 func doRouteRegister(method, route string, handler gin.HandlerFunc, r *gin.Engine) {
-	switch method {
+	switch strings.ToUpper(method) {
 	case "POST":
 		r.POST(route, handler)
 	case "PUT":
