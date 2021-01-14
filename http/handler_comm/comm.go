@@ -12,10 +12,10 @@ const (
 type MethodType string
 
 const (
-	MethodPOST   MethodType = "POST"
-	MethodGET    MethodType = "GET"
-	MethodPUT    MethodType = "PUT"
-	MethodDELETE MethodType = "DELETE"
+	POST   MethodType = "POST"
+	GET    MethodType = "GET"
+	PUT    MethodType = "PUT"
+	DELETE MethodType = "DELETE"
 )
 
 type GinHandleFunc struct {
