@@ -1,8 +1,9 @@
 package router
 
 import (
-	"gin_comm/http/handler_comm"
 	"strings"
+
+	"github.com/flywithbug/gin_comm/http/handler_comm"
 
 	"github.com/gin-gonic/gin"
 )
