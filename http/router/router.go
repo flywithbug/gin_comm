@@ -3,13 +3,11 @@ package router
 import (
 	"strings"
 
-	"github.com/flywithbug/gin_comm/http/handler_comm"
-
 	"github.com/gin-gonic/gin"
 )
 
 //RegisterRouters 注册到路由
-func RegisterRouters(r *gin.Engine, routers []handler_comm.GinHandleFunc) {
+func RegisterRouters(r *gin.Engine, routers []GinHandleFunc) {
 	for _, v := range routers {
 		if v.RouterGroup != nil {
 			doRouteGroupRegister(string(v.Method), strings.ToLower(v.Route), v.Handler, v.RouterGroup)
