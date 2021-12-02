@@ -1,4 +1,4 @@
-package resp
+package gin_comm
 
 import (
 	"encoding/json"
