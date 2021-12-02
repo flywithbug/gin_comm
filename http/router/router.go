@@ -1,4 +1,4 @@
-package router
+package gin_comm
 
 import (
 	"strings"
