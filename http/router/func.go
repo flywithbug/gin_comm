@@ -1,4 +1,4 @@
-package handler_comm
+package router
 
 import "github.com/gin-gonic/gin"
 
